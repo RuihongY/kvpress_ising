@@ -8,12 +8,12 @@ dataset: "ruler"                                  # see DATASET_REGISTRY in eval
 data_dir: "4096"                                  # Subdirectory of the dataset (if applicable) else leave "null"
 
 press_name: "snapkv"                              # see PRESS_REGISTRY in evaluate_registry.py
-compression_ratio: 0.7                            # Compression ratio for the press (0.0 to 1.0)
+compression_ratio: 0.8                           # Compression ratio for the press (0.0 to 1.0)
 key_channel_compression_ratio: null               # For ThinKPress and ComposedPress (0.0 to 1.0)
 threshold: null                                   # For DMSPress
 
 # QUBO parameters for SnapKVPress
-qubo_ratio: 0.1  # Set to > 0 to enable QUBO
+qubo_ratio: 0.0  # Set to > 0 to enable QUBO
 similarity_threshold: 0.85
 lambda_penalty: 2.0
 lagrange_multiplier: 10.0

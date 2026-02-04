@@ -9,6 +9,13 @@ from dataclasses import asdict, dataclass
 from pathlib import Path
 from typing import Any, Dict, Optional
 
+# Add project root to Python path to allow importing kvpress module
+# This allows running evaluate.py from any directory
+_script_dir = Path(__file__).parent.resolve()
+_project_root = _script_dir.parent.resolve()
+if str(_project_root) not in sys.path:
+    sys.path.insert(0, str(_project_root))
+
 import numpy as np
 import pandas as pd
 import torch
@@ -42,7 +49,7 @@ class EvaluationConfig:
     # Core evaluation parameters
     dataset: str = "ruler"
     data_dir: Optional[str] = None
-    model: str = "meta-llama/Meta-Llama-3.1-8B-Instruct"
+    model: str = "Qwen/Qwen2-7B-Instruct"
     device: Optional[str] = None
     press_name: str = "knorm"
     compression_ratio: float = 1.0
@@ -180,8 +187,17 @@ class EvaluationConfig:
 
 def _load_yaml_config(path: str | Path) -> dict:
     """Loads a YAML file. Returns an empty dict if it doesn't exist."""
+    # Convert relative paths to absolute paths relative to script directory
+    if isinstance(path, str) and not Path(path).is_absolute():
+        # If it's a relative path, make it relative to the evaluation directory
+        script_dir = Path(__file__).parent.resolve()
+        path = script_dir / path
+    elif isinstance(path, Path) and not path.is_absolute():
+        script_dir = Path(__file__).parent.resolve()
+        path = script_dir / path
+    
     try:
-        with open(path, "r") as f:
+        with open(str(path), "r") as f:
             return yaml.safe_load(f) or {}
     except FileNotFoundError:
         logger.warning(f"Config file not found at {path}. Using only command-line arguments and defaults.")
@@ -336,6 +352,10 @@ class EvaluationRunner:
 
         logger.info(f"Loading dataset: {DATASET_REGISTRY[dataset_name]} (data_dir: {data_dir})")
         df = load_dataset(DATASET_REGISTRY[dataset_name], data_dir=data_dir, split="test").to_pandas()
+
+        if dataset_name == "ruler":
+            df = df.loc[df["task"].isin(["qa_1", "fwe"])].reset_index(drop=True)
+            logger.info(f"Filtered dataset to tasks: qa_1, fwe. Remaining {len(df)} entries.")
 
         if fraction < 1.0:
             original_len = len(df)
@@ -559,6 +579,10 @@ class CliEntryPoint:
         final_args = asdict(EvaluationConfig())
 
         # 2. Layer YAML values on top.
+        # If config_file is not specified, use default path relative to script directory
+        if config_file is None:
+            script_dir = Path(__file__).parent.resolve()
+            config_file = str(script_dir / "evaluate_config.yaml")
         yaml_config = _load_yaml_config(config_file)
         final_args.update(yaml_config)
 
