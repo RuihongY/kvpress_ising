@@ -1,0 +1,114 @@
+answer,task,max_new_tokens,compression_ratio,answer_prefix,predicted_answer,question
+['Afranji' 'Afranji' 'Afranji'],qa_1,32,0.0,Answer:, Afranji,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: What was the name of the Norman castle? "
+"['Turing machines' 'deterministic Turing machines'
+ 'deterministic Turing machines']",qa_1,32,0.0,Answer:, Deterministic Turing machine,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: In what theoretical machine is it confirmed that a problem in P belies membership in the NP class? "
+"['$1,000,000' 'US$1,000,000' 'US$1,000,000']",qa_1,32,0.0,Answer:," US$1,000,000","Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: What is the prize offered for finding a solution to P=NP? "
+"['time and memory' 'time and memory consumption'
+ 'time and memory consumption']",qa_1,32,0.0,Answer:, Time and memory consumption.,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: What two resources commonly consumed by alternate models are typically known to vary? "
+['eoptso' 'qynuqp' 'rqeqis'],fwe,50,0.0,"Answer: According to the coded text above, the three most frequently appeared words are:"," ""eoptso"", ""qynuqp"", and ""rqeqis"".",Question: Do not provide any explanation. Please ignore the dots '....'. What are the three most frequently appeared words in the above coded text? 
+['inputs' 'inputs' 'inputs'],qa_1,32,0.0,Answer:, time,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Case complexities provide three likelihoods of what differing variable that remains the same size?  "
+['arbitrary graph' 'arbitrary' 'arbitrary'],qa_1,32,0.0,Answer:, An arbitrary graph is an example of an input used in a decision problem.,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: What kind of graph is an example of an input used in a decision problem? "
+['Rollo' 'Rollo' 'Rollo'],qa_1,32,0.0,Answer:, Rollo,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Who upon arriving gave the original viking settlers a common identity? "
+['Tehachapis' 'the Tehachapis' 'Tehachapis'],qa_1,32,0.0,Answer:, Tehachapis,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Which mountain range influenced the split of the regions? "
+['dygpya' 'ptwalb' 'qcehud'],fwe,50,0.0,"Answer: According to the coded text above, the three most frequently appeared words are:"," ""dygpya"", ""ptwalb"", and ""qcehud"".",Question: Do not provide any explanation. Please ignore the dots '....'. What are the three most frequently appeared words in the above coded text? 
+"['Mexico–United States border' 'the Mexico–United States border'
+ 'Mexico–United States border']",qa_1,32,0.0,Answer:, Mexico–United States border,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: What is the name of the border to the south? "
+['dbhcwv' 'oyxmwh' 'qnkipl'],fwe,50,0.0,"Answer: According to the coded text above, the three most frequently appeared words are:"," ""dbhcwv"", ""oxymwh"", and ""qnkipl"".",Question: Do not provide any explanation. Please ignore the dots '....'. What are the three most frequently appeared words in the above coded text? 
+"['how much time the best algorithm requires to solve the problem' 'time'
+ 'time']",qa_1,32,0.0,Answer:, Time,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: What is a commonly used measurement used to determine the complexity of a computational problem? "
+['BSkyB' 'BSkyB' 'BSkyB'],qa_1,32,0.0,Answer:, BSkyB,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: What company was formed by the merger of Sky Television and British Satellite Broadcasting? "
+"['Los Angeles International Airport' 'Los Angeles International Airport'
+ 'Los Angeles International Airport']",qa_1,32,0.0,Answer:, San Diego International Airport,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: What is the second busiest airport in the United States? "
+"['Metropolitan Statistical Areas' 'Metropolitan Statistical Areas'
+ 'Metropolitan Statistical Areas']",qa_1,32,0.0,Answer:," The eight areas that make up a part of southern California are often referred to as the ""eight counties"".","Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: What is the name associated with the eight areas that make up a part of southern California? "
+['fhsvzl' 'qknhoi' 'rjskmp'],fwe,50,0.0,"Answer: According to the coded text above, the three most frequently appeared words are:"," fhsvzl, qknhoi, and rjskmp.",Question: Do not provide any explanation. Please ignore the dots '....'. What are the three most frequently appeared words in the above coded text? 
+['6.7' '6.7' '6.7'],qa_1,32,0.0,Answer:, magnitude 6.7,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: What magnitude was the 1994 Northridge earthquake? "
+['L' 'L' 'L'],qa_1,32,0.0,Answer:, L,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: What variable is associated with all problems solved within logarithmic space? "
+['dgilre' 'pcmozb' 'qijler'],fwe,50,0.0,"Answer: According to the coded text above, the three most frequently appeared words are:"," ""dgilre"", ""pcmozb"", and ""qijler"".",Question: Do not provide any explanation. Please ignore the dots '....'. What are the three most frequently appeared words in the above coded text? 
+['Edgar' 'Edgar' 'Edgar Atheling'],qa_1,32,0.0,Answer:, Edgar Atheling,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Who was Margaret's brother? "
+['ewwjop' 'qtfwrm' 'rdrixd'],fwe,50,0.0,"Answer: According to the coded text above, the three most frequently appeared words are:"," ewwjop, qtfwrm, and rdrixd.",Question: Do not provide any explanation. Please ignore the dots '....'. What are the three most frequently appeared words in the above coded text? 
+['ejszom' 'osvmwu' 'qxjtpf'],fwe,50,0.0,"Answer: According to the coded text above, the three most frequently appeared words are:"," ""ejszom"", ""ixnyfr"", and ""osvmwu"".",Question: Do not provide any explanation. Please ignore the dots '....'. What are the three most frequently appeared words in the above coded text? 
+"['30,000' '30,000' '30,000']",qa_1,32,0.0,Answer:," 30,000","Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: How many men were in Robert's army? "
+['eudjka' 'pybchy' 'rinfdh'],fwe,50,0.0,"Answer: According to the coded text above, the three most frequently appeared words are:"," ""eudjka"", ""pybchy"", and ""rinfdh"".",Question: Do not provide any explanation. Please ignore the dots '....'. What are the three most frequently appeared words in the above coded text? 
+['dlqhqm' 'okewae' 'ptkbeh'],fwe,50,0.0,"Answer: According to the coded text above, the three most frequently appeared words are:"," dlqhqm, okewae, and ptkbeh.",Question: Do not provide any explanation. Please ignore the dots '....'. What are the three most frequently appeared words in the above coded text? 
+['gbnblt' 'sdbzqa' 'syurqj'],fwe,50,0.0,"Answer: According to the coded text above, the three most frequently appeared words are:"," ""gbnblt"", ""sdbzqa"", and ""syurqj"".",Question: Do not provide any explanation. Please ignore the dots '....'. What are the three most frequently appeared words in the above coded text? 
+['Pick TV' 'Pick TV' 'Pick TV'],qa_1,32,0.0,Answer:, 'Pick TV',"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: What was Sky Travel later rebranded as? "
+"['Southern Border Region' 'the Southern Border Region'
+ 'Southern Border Region']",qa_1,32,0.0,Answer:, The Southern Border Region,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: What does the El Centro metropolitan area and San Diego-Carslbad-San Marcos metropolitan area form? "
+['Port of Los Angeles' 'the Port of Los Angeles' 'Port of Los Angeles'],qa_1,32,0.0,Answer:, Port of Los Angeles,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: What is the United States busiest commercial port? "
+['emqimp' 'rgknpu' 'skkrnh'],fwe,50,0.0,"Answer: According to the coded text above, the three most frequently appeared words are:"," ""emqimp"", ""rgknpu"", and ""skkrnh"".",Question: Do not provide any explanation. Please ignore the dots '....'. What are the three most frequently appeared words in the above coded text? 
+['dynmhe' 'peybdo' 'pwwctj'],fwe,50,0.0,"Answer: According to the coded text above, the three most frequently appeared words are:"," 'dynmhe', 'peybdo', and 'pwwctj'.",Question: Do not provide any explanation. Please ignore the dots '....'. What are the three most frequently appeared words in the above coded text? 
+['Decision problems' 'Decision problems' 'Decision'],qa_1,32,0.0,Answer:, Decision problems,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: What kind of problems are one of the main topics studied in computational complexity theory? "
+['femzgo' 'oqduxj' 'plcgvs'],fwe,50,0.0,"Answer: According to the coded text above, the three most frequently appeared words are:"," ""femzgo"", ""plcgvs"", and ""oqduxj"".",Question: Do not provide any explanation. Please ignore the dots '....'. What are the three most frequently appeared words in the above coded text? 
+['fbuovd' 'riibyd' 'rzdxcn'],fwe,50,0.0,"Answer: According to the coded text above, the three most frequently appeared words are:"," ""fbuovd"", ""riibyd"", and ""rzdxcn"".",Question: Do not provide any explanation. Please ignore the dots '....'. What are the three most frequently appeared words in the above coded text? 
+['gjmwmk' 'rodubq' 'smtvco'],fwe,50,0.0,"Answer: According to the coded text above, the three most frequently appeared words are:"," ""gjmwmk"", ""rodubq"", and ""smtvco"".",Question: Do not provide any explanation. Please ignore the dots '....'. What are the three most frequently appeared words in the above coded text? 
+['big O notation' 'big O notation' 'big O notation'],qa_1,32,0.0,Answer:, The big O notation,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: What expression is generally used to convey upper or lower bounds? "
+['dukes' 'the dukes' 'dukes'],qa_1,32,0.0,Answer:, The dukes of Normandy used the church as a unifying force for their disparate Duchy.,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Who used the church to unify themselves? "
+['five million' 'five million' 'five million'],qa_1,32,0.0,Answer:, five million,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Each of the extended metropolitan areas has a population that exceeds what number? "
+['ekbmhw' 'qtkstt' 'rqnvfh'],fwe,50,0.0,"Answer: According to the coded text above, the three most frequently appeared words are:"," ""ekbmhw"", ""qtkstt"", and ""rzovsl"".",Question: Do not provide any explanation. Please ignore the dots '....'. What are the three most frequently appeared words in the above coded text? 
+['fmbzug' 'qvmbvh' 'snjlik'],fwe,50,0.0,"Answer: According to the coded text above, the three most frequently appeared words are:"," fmbzug, qvmbvh, and snjlik.",Question: Do not provide any explanation. Please ignore the dots '....'. What are the three most frequently appeared words in the above coded text? 
+['fxvtgq' 'poetxx' 'raqhda'],fwe,50,0.0,"Answer: According to the coded text above, the three most frequently appeared words are:"," fxvtgq, poetxx, and raqhda.",Question: Do not provide any explanation. Please ignore the dots '....'. What are the three most frequently appeared words in the above coded text? 
+['fltkoy' 'rbbytl' 'rvzncy'],fwe,50,0.0,"Answer: According to the coded text above, the three most frequently appeared words are:"," ""fltkoy"", ""rbbytl"", and ""rvzncy"".",Question: Do not provide any explanation. Please ignore the dots '....'. What are the three most frequently appeared words in the above coded text? 
+['BSkyB' 'BSkyB' 'BSkyB'],qa_1,32,0.0,Answer:, BSkyB,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Who is the UK's largest digital subscription television company? "
+['fnrugp' 'rpcske' 'rwmhfj'],fwe,50,0.0,"Answer: According to the coded text above, the three most frequently appeared words are:"," ""fnrugp"", ""rwmhfj"", and ""rpcske"".",Question: Do not provide any explanation. Please ignore the dots '....'. What are the three most frequently appeared words in the above coded text? 
+['ewuqnk' 'puuwsn' 'rrbpgf'],fwe,50,0.0,"Answer: According to the coded text above, the three most frequently appeared words are:"," ""ewuqnk"", ""puuwsn"", and ""rrbpgf"".",Question: Do not provide any explanation. Please ignore the dots '....'. What are the three most frequently appeared words in the above coded text? 
+['San Fernando Valley' 'the San Fernando Valley' 'San Fernando Valley'],qa_1,32,0.0,Answer:, San Fernando Valley,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: Warner Center is located in which area? "
+['time and storage' 'time and storage' 'time and storage'],qa_1,32,0.0,Answer:, Two basic primary resources used to gauge complexity are time and space.,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: What are two basic primary resources used to guage complexity? "
+['ehjgvv' 'ptbqoq' 'qtgntz'],fwe,50,0.0,"Answer: According to the coded text above, the three most frequently appeared words are:"," ""ehjgvv"", ""ptbqoq"", and ""qtgntz"".",Question: Do not provide any explanation. Please ignore the dots '....'. What are the three most frequently appeared words in the above coded text? 
+['11' '11' '11'],qa_1,32,0.0,Answer:, 18 km,"Answer the question based on the given documents. Only give me the answer and do not output any other words.
+
+Question: How many miles south of San Jose is the north - south midway point located? "
