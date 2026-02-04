@@ -78,6 +78,13 @@ def attention_patch(func):
             batch_indices, head_indices, seq_indices = module.masked_key_indices
             key[batch_indices, head_indices, seq_indices] = k[batch_indices, head_indices]
 
+        # Adjust attention_mask if KV cache was compressed
+        # When KV cache is compressed, the attention_mask still has the original sequence length,
+        # but the key/value tensors have been shortened. This mismatch causes errors in SDPA.
+        if attention_mask is not None and key.shape[2] != attention_mask.shape[-1]:
+            # Truncate attention_mask to match compressed KV cache length
+            attention_mask = attention_mask[..., :key.shape[2]]
+
         # see https://github.com/NVIDIA/kvpress/pull/115#issuecomment-3183785597
         # cu_seq_lens_k are only in kwargs if model.generate is used.
         if "cu_seq_lens_k" in kwargs:

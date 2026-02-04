@@ -29,6 +29,7 @@ from kvpress import (
     ScorerPress,
     ThinKPress,
     DMSPress,
+    SnapKVPress,
 )
 
 logger = logging.getLogger(__name__)
@@ -48,6 +49,16 @@ class EvaluationConfig:
     key_channel_compression_ratio: Optional[float] = None
     threshold: Optional[float] = None
 
+    # QUBO parameters for SnapKVPress
+    qubo_ratio: float = 0.0
+    similarity_threshold: float = 0.85
+    lambda_penalty: float = 2.0
+    lagrange_multiplier: float = 10.0
+    qubo_solver_method: str = 'parallel_annealing'
+    qubo_num_iterations: int = 100
+    qubo_initial_temp: float = 10.0
+    qubo_cooling_rate: float = 0.95
+    qubo_num_chains: int = 20
     # Dataset and generation parameters
     fraction: float = 1.0
     max_new_tokens: Optional[int] = None
@@ -142,6 +153,8 @@ class EvaluationConfig:
             components.append(f"key_channel_cr{self.key_channel_compression_ratio:.2f}")
         if self.needle_depth is not None and self.dataset == "needle_in_haystack":
             components.append(f"needle_depth{self.needle_depth}")
+        if self.qubo_ratio > 0:
+            components.append(f"qubo{self.qubo_ratio:.2f}")
 
         dir_name = "__".join(filter(None, components))  # Filter None/empty strings
         config_dir = output_dir / dir_name
@@ -288,6 +301,17 @@ class EvaluationRunner:
             logger.info(
                 f"Set DecodingPress compression_interval to {self.config.compression_interval}, target_size to {self.config.target_size}, hidden_states_buffer_size to {self.config.hidden_states_buffer_size}"
             )
+        elif isinstance(press, SnapKVPress):
+            press.qubo_ratio = self.config.qubo_ratio
+            press.similarity_threshold = self.config.similarity_threshold
+            press.lambda_penalty = self.config.lambda_penalty
+            press.lagrange_multiplier = self.config.lagrange_multiplier
+            press.qubo_solver_method = self.config.qubo_solver_method
+            press.qubo_num_iterations = self.config.qubo_num_iterations
+            press.qubo_initial_temp = self.config.qubo_initial_temp
+            press.qubo_cooling_rate = self.config.qubo_cooling_rate
+            press.qubo_num_chains = self.config.qubo_num_chains
+            logger.info(f"Set SnapKVPress qubo_ratio to {self.config.qubo_ratio}, similarity_threshold to {self.config.similarity_threshold}, lambda_penalty to {self.config.lambda_penalty}, lagrange_multiplier to {self.config.lagrange_multiplier}, qubo_solver_method to {self.config.qubo_solver_method}, qubo_num_iterations to {self.config.qubo_num_iterations}, qubo_initial_temp to {self.config.qubo_initial_temp}, qubo_cooling_rate to {self.config.qubo_cooling_rate}, qubo_num_chains to {self.config.qubo_num_chains}")
         else:
             if hasattr(press, "compression_ratio"):
                 press.compression_ratio = compression_ratio
